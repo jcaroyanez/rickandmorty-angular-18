@@ -1,0 +1,48 @@
+.container {
+	padding: 30px 80px 60px 120px;
+	max-width: 500px;
+	margin: 100px auto 80px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 30px;
+	position: relative;
+	height: 100vh;
+	background-color: #fdf5e6;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	border: 1px solid #d2b48c;
+
+	img {
+		position: absolute;
+		top: -50px;
+		right: 20px;
+		transform: rotate(-14deg);
+	}
+}
+
+.content-info {
+	min-width: 220px;
+	margin-top: 20px;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 20px;
+	border: 1px solid;
+	padding: 20px;
+}
+
+.values {
+	margin-top: 30px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	gap: 15px;
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+.text {
+	font-size: 18px;
+}

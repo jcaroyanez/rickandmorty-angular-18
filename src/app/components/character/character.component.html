@@ -1,0 +1,18 @@
+@let characterTemplate = character(); @if(characterTemplate) {
+<a [routerLink]="['character', characterTemplate.id]" class="link">
+  <div class="card">
+    <img
+      [ngSrc]="characterTemplate.image"
+      [alt]="characterTemplate.name"
+      width="300"
+      height="300"
+      [priority]="position() < 6"
+    />
+    <p class="title">{{ characterTemplate.name }}</p>
+    <div class="content-info">
+      <p>{{ characterTemplate.species }}</p>
+			<app-character-status [status]="characterTemplate.status" />
+    </div>
+  </div>
+</a>
+}

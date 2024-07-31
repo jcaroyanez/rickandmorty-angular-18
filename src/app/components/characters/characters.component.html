@@ -1,0 +1,11 @@
+@if (characters$ | async; as characters) {
+	<div class="container">
+		@for (character of characters; track character.id; let i = $index) {
+			@defer (on viewport) {
+				<app-character [character]="character" [position]="i" />
+			} @placeholder {
+				<p>loading...</p>
+			}
+		}
+	</div>
+}

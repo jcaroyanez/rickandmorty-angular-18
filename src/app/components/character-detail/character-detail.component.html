@@ -1,0 +1,38 @@
+@defer () {
+	@if (character$ | async; as character) {
+		<div class="container">
+			<h1>Dossier {{ id }}</h1>
+			<img [ngSrc]="character.image" width="200" height="200" priority />
+			<div>
+				<h1>{{ character.name }}</h1>
+				<div class="content-info">
+					<div class="values">
+						<p class="text">- Status</p>
+						<app-character-status [status]="character.status" />
+					</div>
+	
+					<div class="values">
+						<p class="text">- Species</p>
+						<p class="text">{{ character.species }}</p>
+					</div>
+	
+					<div class="values">
+						<p class="text">- Gender</p>
+						<p class="text">{{ character.gender }}</p>
+					</div>
+					
+					<div class="values">
+						<p class="text">- Location</p>
+						<p class="text">{{ character.location.name }}</p>
+					</div>
+	
+				</div>
+			</div>
+		</div>
+	}
+} @placeholder {
+	<p>montando...</p>
+} @loading { 
+	<p>loading...</p>
+}
+

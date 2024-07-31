@@ -1,0 +1,40 @@
+.card {
+	height: 400px;
+	width: 300px;
+	cursor: pointer;
+	box-shadow: 0px 0px 14px -4px rgba(0,0,0,0.75);
+	border-radius: 8px;
+
+	img {
+		border-radius: 8px 8px 0px 0px;
+	}
+}
+
+.title {
+	font-size: 20px;
+	text-align: center;
+	font-weight: 500;
+	color: #000;
+	margin: 5px 0;
+}
+
+.link {
+	text-decoration: none;
+}
+
+.content-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+
+	p:first-child {
+		color: #000;
+		font-size: 17px;
+	}
+}
+
+p {
+	margin: 0;
+	text-align: center;
+}
